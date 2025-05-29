@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAI Capital Management - Overview</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #a3bffa);
+            color: #2c3e50;
+            position: relative;
+        }
+        .header {
+            background-color: #34495e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .header .brand {
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .header nav a:hover {
+            color: #a3bffa;
+        }
+        .header .actions a, .header .actions button {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .header .actions a:hover, .header .actions button:hover {
+            color: #a3bffa;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .section-table th, .section-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-table th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .section-table td {
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        .section-table tr:last-child td {
+            border-bottom: none;
+        }
+        .section-table tr td:first-child {
+            font-weight: 600;
+        }
+        .section-table a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .section-table a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #34495e;
+            font-size: 12px;
+            margin-top: 20px;
+            background-color: #f0f4f8;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .header nav, .header .actions {
+                margin-top: 10px;
+            }
+            .main-content {
+                margin: 15px;
+                padding: 15px;
+            }
+            .section-table th, .section-table td {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="brand">MAI Capital Management</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="overview.html">Overview</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="reports.html">Reports</a>
+            <a href="market.html">Market</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="actions">
+            <button>Open an Account</button>
+            <a href="profile.html">Profile & Settings</a>
+            <a href="#logout">Log Out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2 class="section-title">Overview</h2>
+
+        <!-- Overview Section -->
+        <div class="section">
+            <table class="section-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total Investment Value</td>
+                    <td>$450,674.00</td>
+                </tr>
+                <tr>
+                    <td>Available Balance</td>
+                    <td>$400,000.00</td>
+                </tr>
+                <tr>
+                    <td>Current Gains</td>
+                    <td>$50,674.00 (11.2% YTD)</td>
+                </tr>
+                <tr>
+                    <td>Next Review Date</td>
+                    <td>06/15/2025</td>
+                </tr>
+                <tr>
+                    <td>Tracking Status</td>
+                    <td>Suitcase containing $450,000 is on its way to Minnesota. <a href="https://glide-ap-s6ob.glide.page" target="_blank">Track here</a> (JavaScript required).</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 MAI Capital Management | 123 Investment Lane, Financial District, USA | info@maicapital.com | As of 09:29 AM GMT, May 29, 2025</p>
+    </div>
+</body>
+</html>

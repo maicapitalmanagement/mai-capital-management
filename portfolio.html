@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAI Capital Management - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #a3bffa);
+            color: #2c3e50;
+            position: relative;
+        }
+        .header {
+            background-color: #34495e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .header .brand {
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .header nav a:hover {
+            color: #a3bffa;
+        }
+        .header .actions a, .header .actions button {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .header .actions a:hover, .header .actions button:hover {
+            color: #a3bffa;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .section-table th, .section-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-table th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .section-table td {
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        .section-table tr:last-child td {
+            border-bottom: none;
+        }
+        .section-table tr td:first-child {
+            font-weight: 600;
+        }
+        .investment-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .investment-table th, .investment-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .investment-table th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+        }
+        .investment-table td {
+            font-size: 14px;
+        }
+        .investment-table tr:last-child td {
+            border-bottom: none;
+            font-weight: 700;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #34495e;
+            font-size: 12px;
+            margin-top: 20px;
+            background-color: #f0f4f8;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .header nav, .header .actions {
+                margin-top: 10px;
+            }
+            .main-content {
+                margin: 15px;
+                padding: 15px;
+            }
+            .section-table th, .section-table td,
+            .investment-table th, .investment-table td {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="brand">MAI Capital Management</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="overview.html">Overview</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="reports.html">Reports</a>
+            <a href="market.html">Market</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="actions">
+            <button>Open an Account</button>
+            <a href="profile.html">Profile & Settings</a>
+            <a href="#logout">Log Out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2 class="section-title">Portfolio</h2>
+
+        <!-- Investment Breakdown Section -->
+        <div class="section">
+            <div class="section-title">Investment Breakdown</div>
+            <table class="investment-table">
+                <tr>
+                    <th>Asset Type</th>
+                    <th>Allocation (%)</th>
+                    <th>Value ($)</th>
+                    <th>Gains ($)</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Stocks (US Large Cap)</td>
+                    <td>35%</td>
+                    <td>157,736.00</td>
+                    <td>17,736.00</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Stocks (International)</td>
+                    <td>25%</td>
+                    <td>112,668.50</td>
+                    <td>12,668.50</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Bonds (Corporate)</td>
+                    <td>20%</td>
+                    <td>90,000.00</td>
+                    <td>10,000.00</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Real Estate (REITs)</td>
+                    <td>15%</td>
+                    <td>67,500.00</td>
+                    <td>7,500.00</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Cash Reserves</td>
+                    <td>5%</td>
+                    <td>22,500.00</td>
+                    <td>2,769.50</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>100%</td>
+                    <td>$450,674.00</td>
+                    <td>$50,674.00</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Portfolio Details Section -->
+        <div class="section">
+            <div class="section-title">Portfolio Details</div>
+            <table class="section-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total Portfolio Value</td>
+                    <td>$450,674.00</td>
+                </tr>
+                <tr>
+                    <td>Annualized Return (Last 5 Years)</td>
+                    <td>8.5%</td>
+                </tr>
+                <tr>
+                    <td>Projected Value (Next 5 Years at 8.5%)</td>
+                    <td>$669,427.39</td>
+                </tr>
+                <tr>
+                    <td>Risk Level</td>
+                    <td>Moderate (Volatility: 12.3%)</td>
+                </tr>
+                <tr>
+                    <td>Diversification Score</td>
+                    <td>87/100 (Highly Diversified)</td>
+                </tr>
+                <tr>
+                    <td>Dividend Income (YTD)</td>
+                    <td>$5,250.00</td>
+                </tr>
+                <tr>
+                    <td>Capital Gains (YTD)</td>
+                    <td>$45,424.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 MAI Capital Management | 123 Investment Lane, Financial District, USA | info@maicapital.com | As of 09:13 AM GMT, May 29, 2025</p>
+    </div>
+</body>
+</html>

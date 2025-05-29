@@ -1,0 +1,282 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ADD8E6; /* Ambient light blue */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4b0082; /* Dark purple header */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: #e6e6e6;
+    margin-top: 5px;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav a:hover, nav button:hover {
+    color: #ffd700;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.accounts-section, .status-tracker-section, .investments {
+    background-color: #ADD8E6; /* Ambient blue to match body */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.account-table, .portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.95); /* White overlay for readability */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.account-table th, .account-table td, .portfolio-table th, .portfolio-table td {
+    background-color: rgba(255, 255, 255, 0.95); /* Ensure cells are readable */
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.account-table th, .portfolio-table th {
+    background: linear-gradient(90deg, #6a0dad, #9370db); /* Purple gradient for header */
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.account-table td:first-child, .portfolio-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    padding-left: 15px;
+}
+
+.account-table td:last-child, .portfolio-table td:last-child {
+    padding-right: 15px;
+}
+
+.total-row {
+    background-color: #f9fbfd;
+    font-weight: bold;
+}
+
+.total-row td {
+    color: #333;
+}
+
+.info-text {
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.info-text a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.info-text a:hover {
+    text-decoration: underline;
+}
+
+.status-tracker-section {
+    padding: 20px;
+}
+
+.status-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.status-item {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgba(255, 255, 255, 0.95); /* White overlay for status cards */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.status-item h4 {
+    color: #4b0082;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.status-item p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.status-date {
+    font-style: italic;
+    color: #888;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status-badge.InProgress {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+.status-badge.Completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status-badge.Pending {
+    background-color: #ff9800;
+    color: white;
+}
+
+.portfolio-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.95); /* White overlay for summary cards */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.summary-card h3 {
+    color: #4b0082;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.performance {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.performance-up {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.performance-down {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.action-btn-small {
+    background-color: #6a0dad;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.action-btn-small:hover {
+    background-color: #4b0082;
+}
+
+.portfolio-actions {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* White overlay for action buttons */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.action-btn {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.action-btn:hover {
+    background-color: #4b0082;

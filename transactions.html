@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments - Mai Capital Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mai Capital Management</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="investments.html">Investments</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="profile.html">Profile</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="investments">
+            <h2>Investment Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tech Fund</td>
+                        <td>150</td>
+                        <td>$45.67</td>
+                        <td>$6,850.50</td>
+                    </tr>
+                    <tr>
+                        <td>Real Estate ETF</td>
+                        <td>200</td>
+                        <td>$32.10</td>
+                        <td>$6,420.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Chip Stocks</td>
+                        <td>75</td>
+                        <td>$89.33</td>
+                        <td>$6,699.75</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="action-btn">Add New Investment</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
