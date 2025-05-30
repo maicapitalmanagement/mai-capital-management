@@ -46,3 +46,4 @@ function logout() {
     localStorage.removeItem('username');
     window.location.href = 'index.html';
 }
+<script src="script.js"></script>
